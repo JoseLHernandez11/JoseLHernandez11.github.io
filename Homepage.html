@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+
+<!-- Menu Navigation Bar -->
+<div class="navbar">
+    <div class="dropdown">
+        <button class="dropbtn">
+            Home
+            <i class="fa fa-caret-down"></i>
+        </button>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Résumé
+            <i class="fa fa-caret-down"></i>
+        </button>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">
+            Contact
+            <i class="fa fa-caret-down"></i>
+        </button>   
+
+    </div>
+
+</div>
+
+<style>
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #8C8C8C;
+    }
+
+        .navbar a {
+            float: left;
+            font-size: 18px;
+            color: white;
+            font-family: Helvetica;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+        .dropdown .dropbtn {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #8C8C8C;
+            font-family: Helvetica;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            float: none;
+            color: #8C8C8C;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 200px;
+        background-color: #191970;
+        padding: 0px;
+        border: none;
+        width: 0%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size:40px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        word-spacing:10px; 
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .divider1 {
+        height: auto;
+        width: 100%;
+        background-color: lightslategray;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 10px;
+    }
+
+    .divider2 {
+        height: auto;
+        width: 100%;
+        background-color: dodgerblue;
+        padding-top: 10px;
+            
+    }
+
+    .divider3 {
+        height: auto;
+        width: 100%;
+        background-color: dimgray;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header {
+        height:auto;
+        width: 100%;
+        background-color: white;
+        margin:0;
+    }
+
+    .container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: left;
+        background-color: black;
+        padding-top:10px;
+     
+    }
+
+    .container2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: left;
+        background-color: dimgrey;
+        padding-top: 10px;
+    }
+
+    .CodeRes {
+        font-family:Courier New, Courier, monospace;
+        color:white;
+        margin:10px;
+        text-align:left;
+    }
+
+    .demoButton {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color:black;
+        background-image:url("csuf-emblem-blue.jpg");
+        align-content:center;
+    }
+
+    .ThetaButton {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        background-image: url("Theta.jpg");
+        align-content: center;
+    }
+
+
+</style>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="header" >
+        <h1 class="title" style="color:Black;">Jose Hernandez </h1>
+        <div class="divider1">
+           <h1 style="color:gold;" class="center">  </h1>
+           <p style="color:white;" class="center"> Welcome to my self-made website! Here you can learn more about me and my ambitions! Currently I am a Hispanic third year computer science major trying to make it in the world of technology. </p>
+
+           <div class="divider2">
+               <p class="center" style="font-family:Courier New, Courier, monospace; color:white"> Hello World! I am a developer who's outline is below! </p>
+
+               <div class="container">
+
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.Date_of_birth(); 
+
+ =>"March 10, 2000"
+                </pre> <!-- this is the end of the birth clause-->
+
+
+                   <pre style="color:forestgreen    ;" class="CodeRes"> 
+ >JoseH.major(); 
+
+ =>"Computer Science"
+                </pre> <!-- this is the end of the major clause-->
+
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.education();
+
+ =>"California State University, Fullerton"
+                </pre> <!-- this is the end of the education clause-->
+
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.interests();
+
+ =>["Gaming", "Programming", "Reading", "TwitchStreaming"]
+                </pre> <!-- this is the end of the interests clause-->
+
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.expectedGraduation();
+
+ =>"May 2021"
+                </pre> <!-- this is the end of the major clause-->
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.ProgrammingLanguages();
+
+ =>"C++","HTML","CSS","PHP","MySql","Javascript","C#","Python","Swift", "Java"
+                </pre> <!-- this is the end of the coding clause-->
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.Software();
+
+ =>"Visual Studio", "Unity Engine", "Unreal Engine", "GitHub"
+                </pre> <!-- this is the end of the Software clause-->
+                   <pre style="color:forestgreen;" class="CodeRes"> 
+ >JoseH.Resume();
+
+ =>""
+                </pre> <!-- this is the end of the major clause-->
+
+               </div> <!-- this is the end of the container-->
+
+
+               <div class="divider3">
+                   <h1 style="color:white;" class="center"> Projects </h1>
+                   <div class="container2">
+                       <button class="demoButton" onclick="location.href = 'http://www.fullerton.edu/'">
+                       </button>
+                       <button class="ThetaButton" onclick="location.href = 'https://fullerton.campuslabs.com/engage/organization/thetatau'">
+                       </button>
+                   </div>
+
+                   <h2 class="center" style="font-family: 'Agency FB'; color: white;"> Personal Website:   July 2020 - September 2020 </h2>
+                   <p class="container2"> Description: From former web-development project, I constructed my very own professional portfolio. I was able to self-teach new programming languages and express them on the very site you're on now! </p>
+                   <p class="container2"> Languages Used: HTML, CSS, PHP, Javascript </p>
+                   <h4 class="center" style="font-family: 'Agency FB'; color: white;"> Discord Bot: July - August 2020 </h4>
+                   <p class="container2"> Over the course of the pandemic summer I was familiarized with new software known as Discord that encourages widgets and bots into servers. I learned Javascript in order to program one of my own bots which constructs polls to a server. </p>
+                   <p class="container2"> Languages Used: Javascript </p>
+                   <h3 class="center" style="font-family: 'Agency FB'; color: white;"> Mental Health Game: January 2020 </h3>
+                   <p class="container2"> Whilst attending USC Hackathon, my group and I decided to construct a game on Unity Engine. This game was based around Mental health with each level representing a different variation of mental health. </p>
+                   <p class="container2"> Languages Used: C# </p>
+                   <h5 class="center" style="font-family: 'Agency FB'; color: white;"> Theta Tau Website: September - November 2019 </h5>
+                   <p class="container2"> This project was based solely around front-end programming only. I was able to style my page of the entire website, found at .  </p>
+                   <p class="container2"> Languages Used: HTML, CSS </p>
+                   <h1 class="center" style="font-family:'Agency FB'; color:white;"> Theta Tau Battle Bots Premier Event: March - April 2019 </h1>
+                   <p class="container2"> Description: This event was in collaboration with other on-campus clubs such as IEEE,. This project allowed collaboration from those in other STEM areas of interest. </p>
+                   <p class="container2"> Languages Used: Arduino, MATLAB, MagPi </p>
+
+               </div>
+           </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
+
